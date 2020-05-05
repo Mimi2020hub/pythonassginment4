@@ -17,7 +17,7 @@ class MeetingMinutes(models.Model):
     minutestext=models.TextField()
     
     def __str__(self):
-        return self.meetingid
+        return str(self.meetingid)
 
 class Resource(models.Model):
     resourcename=models.CharField(max_length=255)
